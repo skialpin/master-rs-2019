@@ -48,7 +48,7 @@ def parseGPS(data):
         lonDir = sdata[6]
         return convertDMMtoDDD(float(lat),latDir,float(lon),lonDir)
 
-# Umwandlung funktionert auch auf der suedlichen oder oestlichen Erdhalbkugel 
+# Umwandlung funktionert auch auf der suedlichen oder westlichen Erdhalbkugel 
 def convertDMMtoDDD(lat,latDir,lon,lonDir):
     lat1 = math.floor(lat/100)
     lon1 = math.floor(lon/100)
